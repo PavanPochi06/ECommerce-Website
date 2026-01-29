@@ -2,9 +2,12 @@ import dayjs from "dayjs";
 import { formatMoney } from "../../utils/money";
 import { DeliveryOptions } from "./DeliveryOptions";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import "./CheckoutPage.css";
 
 export function OrderSummary({ cart, deliveryOptions, loadCart }) {
+  const navigate = useNavigate();
+
   return (
     <div className="order-summary">
       {deliveryOptions.length > 0 &&
@@ -45,7 +48,10 @@ export function OrderSummary({ cart, deliveryOptions, loadCart }) {
                         {cartItem.quantity}
                       </span>
                     </span>
-                    <span className="update-quantity-link link-primary">
+                    <span
+                      className="update-quantity-link link-primary"
+                      onClick={() => navigate("/")}
+                    >
                       Update
                     </span>
                     <span

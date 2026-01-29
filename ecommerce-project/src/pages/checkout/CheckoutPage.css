@@ -120,6 +120,15 @@
   cursor: pointer;
 }
 
+.delete-quantity-link{
+  color: rgb(164, 14, 14);
+}
+
+.update-quantity-link{
+  color: #007bff; 
+  font-weight: bold;
+}
+
 @media (max-width: 1000px) {
   .checkout-page .delivery-options {
     /* grid-column: 1 means this element will be placed
