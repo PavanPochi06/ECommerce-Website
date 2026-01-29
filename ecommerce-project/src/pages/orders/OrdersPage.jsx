@@ -14,6 +14,16 @@ export function OrdersPage({ cart }) {
     });
   }, []);
 
+  const handleCancelOrder = async (orderId) => {
+    try {
+      await axios.delete(`/api/orders/${orderId}`);
+      setOrders(orders.filter((order) => order.id !== orderId));
+    } catch (error) {
+      console.error("Error canceling order:", error);
+      // Optionally, show an error message to the user
+    }
+  };
+
   return (
     <>
       <title>Orders</title>
@@ -41,6 +51,12 @@ export function OrdersPage({ cart }) {
                   <div className="order-header-right-section">
                     <div className="order-header-label">Order ID:</div>
                     <div>{order.id}</div>
+                    <button
+                      className="cancel-order-button button-secondary"
+                      onClick={() => handleCancelOrder(order.id)}
+                    >
+                      Cancel Order
+                    </button>
                   </div>
                 </div>
 

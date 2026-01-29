@@ -161,6 +161,21 @@
   padding: 8px;
 }
 
+.orders-page .cancel-order-button {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.orders-page .cancel-order-button:hover {
+  background-color: #cc0000;
+}
+
 .button-primary {
   background-color: green;
   color: white;
