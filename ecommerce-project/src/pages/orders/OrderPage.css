@@ -161,6 +161,13 @@
   padding: 8px;
 }
 
+.button-primary {
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
 @media (max-width: 800px) {
   .orders-page .buy-again-button {
     margin-bottom: 10px;

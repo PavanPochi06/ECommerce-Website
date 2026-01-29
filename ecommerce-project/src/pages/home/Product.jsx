@@ -5,13 +5,18 @@ import "../../index.css";
 
 export function Product({ product, loadCart }) {
   const [quantity, setQuantity] = useState(1);
+  const [showAddedMessage, setShowAddedMessage] = useState(false);
 
   const addToCart = async () => {
+    setShowAddedMessage(true);
     axios.post("/api/cart-items", {
       productId: product.id,
       quantity,
     });
     await loadCart();
+    setTimeout(() => {
+      setShowAddedMessage(false);
+    }, 3000);
   };
 
   const selectQuantity = (event) => {
@@ -20,12 +25,13 @@ export function Product({ product, loadCart }) {
   };
 
   return (
-    <div className="product-container"
-      data-testid="product-container">
+    <div className="product-container" data-testid="product-container">
       <div className="product-image-container">
-        <img className="product-image" 
-        data-testid="product-image"
-        src={product.image} />
+        <img
+          className="product-image"
+          data-testid="product-image"
+          src={product.image}
+        />
       </div>
 
       <div className="product-name limit-text-to-2-lines">{product.name}</div>
@@ -60,14 +66,16 @@ export function Product({ product, loadCart }) {
 
       <div className="product-spacer"></div>
 
-      <div className="added-to-cart">
+      <div className={`added-to-cart ${showAddedMessage ? 'added-to-cart-visible' : ''}`}>
         <img src="images/icons/checkmark.png" />
         Added
       </div>
 
-      <button className="add-to-cart-button button-primary" 
-      data-testid="add-to-cart-button"
-      onClick={addToCart}>
+      <button
+        className="add-to-cart-button button-primary"
+        data-testid="add-to-cart-button"
+        onClick={addToCart}
+      >
         Add to Cart
       </button>
     </div>
