@@ -6,19 +6,14 @@ This project simulates a modern online shopping experience including product lis
 
 🚀 Features
 
-    Product listing with images, pricing, and ratings
-    
-    Add to cart & checkout flow
-    
-    Delivery options & payment summary
-    
-    Order history & tracking page
-    
-    Reusable components and modular styling
-    
-    Unit testing for components and utilities
-    
-    Modern build tooling with Vite
+- Product listing with images, pricing, and ratings
+- Add to cart & checkout flow
+- Delivery options & payment summary
+- Order history & tracking page
+- Reusable components and modular styling
+- Unit testing for components and utilities
+
+Modern build tooling with Vite
 
   📂 Project Structure
   
@@ -26,35 +21,24 @@ This project simulates a modern online shopping experience including product lis
     ├── frontend/     # React application (UI)
     └── backend/      # Backend service (API & data)
     
-  Frontend and Backend are independent
-  
-  Each can be started separately
-  
-  Frontend communicates with backend via API calls
+  - Frontend and Backend are independent  
+  - Each can be started separately
+  - Frontend communicates with backend via API calls
 
   🎨 Frontend (React)
   
   Tech Stack
     
-    React.js (Functional Components & Hooks)
-    
-    Vite
-    
-    CSS Modules / Page-based CSS
-    
-    Vitest for testing
-    
-    Responsibilities
-    
-    Render UI and pages
-    
-    Display products
-    
-    Handle cart & checkout UI
-    
-    Show orders & tracking
-    
-    Consume backend APIs
+1. React.js (Functional Components & Hooks)    
+2. Vite
+3. CSS Modules / Page-based CSS
+4. Vitest for testing 
+5. Responsibilities
+6. Render UI and pages
+7. Display products   
+8. Handle cart & checkout UI 
+9. Show orders & tracking 
+10. Consume backend APIs
 
   Key Structure
 
@@ -67,17 +51,12 @@ This project simulates a modern online shopping experience including product lis
 
 🖥️ Backend
 
-  The backend acts as a data provider for the frontend and simulates real API behavior.
-  
-  Responsibilities
-  
-  Serve product data
-  
-  Manage cart data
-  
-  Handle orders & delivery options
-  
-  Provide order tracking data
+  1. The backend acts as a data provider for the frontend and simulates real API behavior. 
+  2. Responsibilities 
+  3. Serve product data 
+  4. Manage cart data
+  5. Handle orders & delivery options
+  6. Provide order tracking data
 
   Data Structure
   
@@ -91,20 +70,16 @@ This project simulates a modern online shopping experience including product lis
 
 This backend can be:
 
-  A Node.js + Express API
-  
-  Or a mock API (JSON-based) used for learning and testing
+  - A Node.js + Express API
+  - Or a mock API (JSON-based) used for learning and testing
   
 
 🔄 Frontend ↔ Backend Interaction
 
-  Frontend fetches data from backend APIs  
-  
-  Data-driven UI rendering
-  
-  Separation of concerns between UI and business logic
-  
-  Mimics real-world client–server communication
+  - Frontend fetches data from backend APIs  
+  - Data-driven UI rendering
+  - Separation of concerns between UI and business logic
+  - Mimics real-world client–server communication
 
 🚀 Running the Project
 
@@ -125,48 +100,32 @@ Both services run independently and must be running simultaneously for full func
 
 🧪 Testing
 
-  Frontend Testing
-  
-  Component testing using Vitest
-  
-  Utility function testing
-  
-  Ensures predictable UI behavior
+  - Frontend Testing  
+  - Component testing using Vitest  
+  - Utility function testing  
+  - Ensures predictable UI behavior
 
 🧠 What This Project Demonstrates
 
-  Clear frontend–backend separation
-  
-  Component-based React architecture
-  
-  API-driven UI development
-  
-  Scalable folder structure
-  
-  Testing mindset
-  
-  Real-world development workflow
+  - Clear frontend–backend separation
+  - Component-based React architecture
+  - API-driven UI development 
+  - Scalable folder structure
+  - Testing mindset
+  - Real-world development workflow
 
 📌 Future Enhancements
 
-  Convert mock backend into Express REST API
-  
-  Add authentication & authorization
-  
-  Persist data using a database
-  
-  Introduce global state management
+  - Convert mock backend into Express REST API  
+  - Add authentication & authorization 
+  - Persist data using a database 
+  - Introduce global state management
 
 🧠 What I Learned From This Project
 
-  Building applications using component-based architecture
-  
-  Managing UI through props and state
-  
-  Structuring React projects for scalability
-  
-  Writing unit tests for components and utilities
-  
-  Using Vite for fast development workflows
-  
-  Handling assets and styles in a real-world React app
+  - Building applications using component-based architecture 
+  - Managing UI through props and state 
+  - Structuring React projects for scalability
+  - Writing unit tests for components and utilities
+  - Using Vite for fast development workflows
+  - Handling assets and styles in a real-world React app
